@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "projectTitle": "Genre Buddy",
+            "imageUrl": "genrebuddy.png",
+            "repoLink": "https://github.com/maxbransontaylor/genre-buddy",
+            "liveLink": "https://maxbransontaylor.github.io/genre-buddy/"
+        },
+        {
+            "projectTitle": "Gift Pilot",
+            "imageUrl": "giftpilot.png",
+            "repoLink": "https://github.com/maxbransontaylor/gift-pilot",
+            "liveLink": "https://gift-pilot.herokuapp.com"
+        }
+    ]
+}

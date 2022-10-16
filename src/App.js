@@ -19,14 +19,14 @@ function App() {
     return <About />;
   }
   return (
-    <body>
-      <div class="container mt-2" id="page-container">
+    <>
+      <div className="container mt-2" id="page-container">
         <Nav currentPage={currentPage} pageSelect={pageSelect}></Nav>
         <main>
           {renderPage()}
         </main>
       </div>
-    </body>
+    </>
   );
 }
 
