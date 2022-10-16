@@ -10,7 +10,8 @@ body {
 }
 
 main {
-  height: 100%;
+  height: 50vw;
+  max-height: 50vw
 }
 
 
@@ -40,4 +41,25 @@ header h1 {
 .tab-content>.active {
   z-index: -1;
   position: relative;
+}
+
+.prof-img {
+  border-radius: 50%;
+  height: 50vw;
+  float: left;
+  shape-outside: circle();
+  padding: 20px;
+  margin-top: 0vw;
+}
+
+#about-text {
+  margin-right: 30px;
+  margin-top: 1vw;
+}
+
+@media screen and (max-width: 769px) {
+
+  .prof-img {
+    height: 30vw;
+  }
 }

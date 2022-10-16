@@ -7,7 +7,7 @@ import Work from "./components/Work";
 function App() {
   const [currentPage, pageSelect] = useState('About Me')
   const renderPage = () => {
-    if (currentPage === 'About') {
+    if (currentPage === 'About Me') {
       return <About />;
     }
     if (currentPage === 'Work') {
@@ -16,7 +16,7 @@ function App() {
     if (currentPage === 'Contact') {
       return <Contact />;
     }
-    return <Contact />;
+    return <About />;
   }
   return (
     <body>
