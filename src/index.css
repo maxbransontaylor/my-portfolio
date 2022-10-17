@@ -13,7 +13,7 @@ a {
 }
 
 main {
-  height: 60vw;
+  height: 50vh;
   position: relative;
 }
 
@@ -24,25 +24,23 @@ main {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .08);
 
 }
+/* each page has it's own opacity transition because the script targets individual css rules */
+.about-page {
+  opacity: 0;
+  transition: opacity ease-in .7s;
+}
+.projects {
+  opacity: 0;
+  transition: opacity ease-in .7s;
+}
+.contact{
+  opacity: 0;
+  transition: opacity ease-in .7s;
+}
 
-.my-node-enter {
+.nopacity {
   opacity: 0;
 }
-
-.my-node-enter-active {
-  opacity: 1;
-  transition: opacity 200ms;
-}
-
-.my-node-exit {
-  opacity: 1;
-}
-
-.my-node-exit-active {
-  opacity: 0;
-  transition: opacity 200ms;
-}
-
 header h1 {
   font-family: 'Gloria Hallelujah', cursive;
 }
@@ -55,7 +53,7 @@ header h1 {
 
 .nav-link.active {
   box-shadow: 2px -3px 5px 1px #D8D4D7 !important;
-  clip-path: inset(-10px -10px 1.4px -5px);
+  clip-path: inset(-10px -10px 0px -5px);
 }
 
 .nav.nav-tabs {
@@ -72,7 +70,7 @@ header h1 {
 
 .prof-img {
   border-radius: 50%;
-  height: 50vw;
+  height: 35vh;
   float: left;
   shape-outside: circle();
   padding: 20px;
@@ -89,12 +87,13 @@ header h1 {
   height: 20vw;
   padding: 0;
   border-radius: 1vw;
+  position: relative;
 
 }
 
 .project-info {
   background-color: rgba(0, 0, 0, .8);
-  z-index: 5;
+  z-index: 1;
   position: relative;
   visibility: hidden;
   border-radius: 1vw;
@@ -105,6 +104,9 @@ header h1 {
 .project-item:hover .project-info {
   visibility: visible;
   opacity: 100%;
+}
+.project-item:hover .project-header,.project-item:hover .project-footer{
+  opacity: 0;
 }
 
 .project-info {
@@ -118,8 +120,28 @@ header h1 {
   border-top-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
   position: absolute;
+  padding: 1vw;
+  font-size: 2vh;
+  transition: all ease-in-out .5s;
 }
+.project-footer{
+  transition: all ease-in-out .5s;
+  background-color: lightblue;
+  display: inline-flex;
+  border-top-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  position: absolute;
+  padding: 1vw;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  font-size: 1vh;
 
+}
+.form-text{
+  color: rgba(255, 0, 0, 0.6) !important
+}
+textarea{resize: none;}
 
 @media screen and (max-width: 769px) {
 
