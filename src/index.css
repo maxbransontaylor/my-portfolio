@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
 body {
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(139, 228, 255) 100%);
   ;
@@ -40,11 +39,11 @@ main {
 
 
 header h1 {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Figtree', cursive;
 }
 
 .nav-link {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Figtree', cursive;
   border: none !important;
   transition: all ease-in-out .5s;
 }

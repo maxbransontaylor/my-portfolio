@@ -38,7 +38,9 @@ function Nav({ currentPage, pageSelect }) {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link">Download Resume</a>
+            <a className="nav-link" href="/taylor-resume.pdf" target="_blank">
+              Download Resume
+            </a>
           </li>
         </ul>
       </nav>
