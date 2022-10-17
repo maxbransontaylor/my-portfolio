@@ -12,7 +12,10 @@ a {
   text-decoration: none;
 }
 
-
+main {
+  height: 60vw;
+  position: relative;
+}
 
 #page-container {
   background-color: white;
@@ -22,21 +25,45 @@ a {
 
 }
 
+.my-node-enter {
+  opacity: 0;
+}
+
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.my-node-exit {
+  opacity: 1;
+}
+
+.my-node-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
 header h1 {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
 .nav-link {
   font-family: 'Gloria Hallelujah', cursive;
+  border: none !important;
+  transition: all ease-in-out .5s;
 }
 
 .nav-link.active {
   box-shadow: 2px -3px 5px 1px #D8D4D7 !important;
+  clip-path: inset(-10px -10px 1.4px -5px);
 }
 
 .nav.nav-tabs {
   box-shadow: inset 0px -15px 13px -10px #D8D4D7 !important;
+  border: none;
+
 }
+
 
 .tab-content>.active {
   /* z-index: -1; */
