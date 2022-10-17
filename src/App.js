@@ -3,7 +3,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Work from "./components/Work";
-
+import Footer from "./components/Footer";
 function App() {
   const [currentPage, pageSelect] = useState("About Me");
   const renderPage = () => {
@@ -23,10 +23,8 @@ function App() {
       <div className="container mt-2" id="page-container">
         <Nav currentPage={currentPage} pageSelect={pageSelect}></Nav>
         <main className="container">{renderPage()}</main>
-        <footer>
-          <h1>footer</h1>
-        </footer>
       </div>
+      <Footer />
     </>
   );
 }

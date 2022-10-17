@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 body {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(45, 206, 253, 1) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(139, 228, 255) 100%);
   ;
   margin: 0;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ header h1 {
 }
 
 .project-header {
-  background-color: lightblue;
+  background-color:rgb(139, 228, 255);
   display: inline-flex;
   border-top-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
@@ -126,7 +126,7 @@ header h1 {
 }
 .project-footer{
   transition: all ease-in-out .5s;
-  background-color: lightblue;
+  background-color: rgb(139, 228, 255);
   display: inline-flex;
   border-top-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
@@ -143,6 +143,12 @@ header h1 {
 }
 textarea{resize: none;}
 
+footer{
+  height: 30vh;
+}
+.footer-icon{
+  height: 10vh;
+}
 @media screen and (max-width: 769px) {
 
   .prof-img {
