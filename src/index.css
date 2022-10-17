@@ -38,9 +38,7 @@ main {
   transition: opacity ease-in .7s;
 }
 
-.nopacity {
-  opacity: 0;
-}
+
 header h1 {
   font-family: 'Gloria Hallelujah', cursive;
 }
@@ -147,7 +145,21 @@ footer{
   height: 30vh;
 }
 .footer-icon{
-  height: 10vh;
+  height: 10vw;
+}
+#contact-details{
+  
+  height: 1vh;
+  transition-delay: 2s;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+}
+.nopacity {
+  opacity: 0;
+}
+.yopacity {
+  opacity: 1;
 }
 @media screen and (max-width: 769px) {
 
