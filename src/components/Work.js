@@ -1,21 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Project from "./Project";
 import projectData from "../project-data.json";
-import { showPage, hidePage } from "../utils/helpers";
+
 function Work() {
-  // directly editing the css rules for the page to avoid having to use react-router-dom
+  const [pageLoad, setPageLoad] = useState(false);
   useEffect(() => {
-    showPage(5);
+    setPageLoad(true);
     return function cleanup() {
-      hidePage(5);
+      setPageLoad(false);
     };
   }, []);
   const { projects } = projectData;
 
   return (
-    <div className="projects d-flex justify-content-center flex-wrap">
+    <div
+      className={`projects d-flex justify-content-center flex-wrap ${
+        pageLoad ? "yopacity" : "nopacity"
+      }`}
+    >
       {projects.map((project, i) => {
-        return <Project project={project} key={i}></Project>;
+        return <Project project={project} key={i} index={i}></Project>;
       })}
     </div>
   );

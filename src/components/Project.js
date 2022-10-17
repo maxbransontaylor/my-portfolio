@@ -1,11 +1,14 @@
 import React from "react";
 
-function Project({ project }) {
+function Project({ project, index }) {
   const { projectTitle, imageUrl, repoLink, liveLink, tech } = project;
+
   return (
     <div
       className="project-item col-10 col-lg-4 m-2 shadow-lg"
-      style={{ backgroundImage: `url(/images/${imageUrl}` }}
+      style={{
+        backgroundImage: `url(/images/${imageUrl}`,
+      }}
     >
       <h2 className="project-header">{projectTitle}</h2>
       <div className="project-info d-flex justify-content-around align-items-center">

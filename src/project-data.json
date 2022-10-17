@@ -13,6 +13,20 @@
             "repoLink": "https://github.com/maxbransontaylor/gift-pilot",
             "liveLink": "https://gift-pilot.herokuapp.com",
             "tech": "Express, Handlebars, MySQL"
+        },
+        {
+            "projectTitle": "This Portfolio!",
+            "imageUrl": "portfolio.png",
+            "repoLink": "https://github.com/maxbransontaylor/my-portfolio",
+            "liveLink": "/",
+            "tech": "React, Bootstrap"
+        },
+        {
+            "projectTitle": "Weather Dashboard",
+            "imageUrl": "weatherdash.png",
+            "repoLink": "https://github.com/maxbransontaylor/weather-dashboard",
+            "liveLink": "https://maxbransontaylor.github.io/weather-dashboard/",
+            "tech": "Bootstrap, HTML, JS"
         }
     ]
 }

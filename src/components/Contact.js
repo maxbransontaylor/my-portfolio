@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { validateEmail, showPage, hidePage } from "../utils/helpers";
+import { validateEmail } from "../utils/helpers";
 
 function Contact() {
+  const [pageLoad, setPageLoad] = useState(false);
   useEffect(() => {
-    showPage(6);
+    setPageLoad(true);
     return function cleanup() {
-      hidePage(6);
+      setPageLoad(false);
     };
   }, []);
   const [formState, setFormState] = useState({
@@ -51,7 +52,10 @@ function Contact() {
   const { nameError, emailError, messageError } = errorMessage;
   const { name, email, message } = formState;
   return (
-    <form onSubmit={submitHandler} className="contact">
+    <form
+      onSubmit={submitHandler}
+      className={`contact ${pageLoad ? "yopacity" : "nopacity"}`}
+    >
       <div className="form-group">
         <label htmlFor="name">Name:</label>
         <input

@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+:root{
+  --primary-color: rgb(139, 228, 255)
+}
 body {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(139, 228, 255) 100%);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, var(--primary-color) 100%);
   ;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-top: 3vh;
 }
 
 a {
@@ -12,29 +16,22 @@ a {
 }
 
 main {
-  height: 50vh;
+  height: 60vh;
   position: relative;
 }
 
 #page-container {
+ 
   background-color: white;
   padding: 0 !important;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .08);
 
 }
-/* each page has it's own opacity transition because the script targets individual css rules */
-.about-page {
-  opacity: 0;
+
+.about-page, .projects, .contact{
   transition: opacity ease-in .7s;
-}
-.projects {
-  opacity: 0;
-  transition: opacity ease-in .7s;
-}
-.contact{
-  opacity: 0;
-  transition: opacity ease-in .7s;
+  padding: 2vw;
 }
 
 
@@ -64,6 +61,14 @@ header h1 {
   /* z-index: -1; */
   position: relative;
 }
+.project-item {
+
+  animation-name: animateIn;
+  animation-duration: 500ms;
+ 
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
 
 .prof-img {
   border-radius: 50%;
@@ -72,16 +77,74 @@ header h1 {
   shape-outside: circle();
   padding: 20px;
   margin-top: 0vw;
+  display: inline;
+  animation-name: animateIn;
+  animation-duration: 500ms;
+  animation-delay: 0;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
 }
 
 #about-text {
-  margin-right: 30px;
-  margin-top: 1vw;
+display: inline;
+  font-size: 2vw;
+  text-align: var(--bs-body-text-align);
+  animation-name: animateInText;
+  animation-duration: 1000ms;
+  animation-delay: 500ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+
+}
+.projects{
+  height: inherit;
+  overflow-y: scroll;
+}
+.project-item {
+
+  animation-name: animateIn;
+  animation-duration: 500ms;
+ 
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+.project-item:nth-child(1){
+  animation-delay: 100ms;
+}.project-item:nth-child(2){
+  animation-delay: 200ms;
+}.project-item:nth-child(3){
+  animation-delay: 300ms;
+}.project-item:nth-child(4){
+  animation-delay: 400ms;
+}.project-item:nth-child(5){
+  animation-delay: 500ms;
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animateInText {
+  0% {
+    opacity: 0;
+    
+  }
+  
+  100% {
+    opacity: 1;
+  }
 }
 
 .project-item {
   background-size: cover;
-  height: 20vw;
+  height: 20vh;
   padding: 0;
   border-radius: 1vw;
   position: relative;
@@ -112,7 +175,8 @@ header h1 {
 }
 
 .project-header {
-  background-color:rgb(139, 228, 255);
+  color: white;
+  background-color:rgb(0, 0, 0);
   display: inline-flex;
   border-top-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
@@ -123,7 +187,8 @@ header h1 {
 }
 .project-footer{
   transition: all ease-in-out .5s;
-  background-color: rgb(139, 228, 255);
+  background-color: rgb(0, 0, 0);
+  color: white;
   display: inline-flex;
   border-top-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
@@ -144,25 +209,65 @@ footer{
   height: 30vh;
 }
 .footer-icon{
-  height: 10vw;
+  height: 7vw;
+  min-height: 50px;
+  max-height: 200px;
+
 }
 #contact-details{
-  
   height: 1vh;
   transition-delay: 2s;
   transition-property: opacity;
   transition-timing-function: ease-in-out;
   transition-duration: .5s;
 }
+#contact-details h2{
+  font-size: 4vw;
+}
+#mobile-resume-btn{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--primary-color);
+  width: 100vw;
+  text-align: center;
+  height: 50px;
+  font-size: large;
+}
+
+/* these rules are used to fade components in/out */
 .nopacity {
   opacity: 0;
 }
 .yopacity {
   opacity: 1;
 }
-@media screen and (max-width: 769px) {
 
+@media screen and (max-width: 769px) {
+/* adust about section to stack image on text */
   .prof-img {
-    height: 30vw;
+    display: block;
+    float:none;
+    margin: auto;
+    height: 20vh;
+  }
+  #about-text {
+    display: block;
+    text-align: center;
+    font-size: 2vh;
+  }
+
+}
+@media screen and (max-width: 440px) {
+  #resume-btn{
+    display: none;
+  }
+  #mobile-resume-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
   }
 }

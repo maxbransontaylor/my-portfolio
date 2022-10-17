@@ -24,7 +24,13 @@ function App() {
         <Nav currentPage={currentPage} pageSelect={pageSelect}></Nav>
         <main className="container">{renderPage()}</main>
       </div>
-      <Footer />
+
+      <div className="container">
+        <Footer />
+      </div>
+      <a href="/taylor-resume.pdf" target="_blank" id="mobile-resume-btn">
+        Download Resume
+      </a>
     </>
   );
 }
