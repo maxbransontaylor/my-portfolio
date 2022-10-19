@@ -24,26 +24,28 @@ function Contact() {
     if (!e.target.value.length) {
       setErrorMessage({
         ...errorMessage,
-        [e.target.name + "Error"]: `${e.target.name} is required`,
+        [e.target.name + "Error"]: `${e.target.name} is required`
       });
+      return;
     } else if (e.target.name === "email") {
       const isValid = validateEmail(e.target.value);
       console.log(isValid);
       // isValid conditional statement
       if (!isValid) {
         setErrorMessage({ ...errorMessage, emailError: `invalid email` });
+        return;
       }
-    } else {
-      setErrorMessage({
-        ...errorMessage,
-        [e.target.name + ["Error"]]: "",
-      });
     }
+    setErrorMessage({
+      ...errorMessage,
+      [e.target.name + ["Error"]]: "",
+    });
 
-    if (!errorMessage) {
+
+    if (!errorMessage[e.target.name]) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
     }
-    console.log(errorMessage);
+
   }
   function submitHandler(e) {
     e.preventDefault();
