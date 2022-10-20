@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
 
+
 :root {
   --primary-color: rgb(60, 151, 255);
 }
@@ -65,7 +66,7 @@ header h1 {
 }
 
 .nav-tabs .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .nav-link.active {
@@ -95,7 +96,12 @@ header h1 {
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-
+.about-page{
+  height: inherit;
+}
+#about-container{
+  height:min-content;
+}
 .prof-img {
   border-radius: 50%;
   height: 35vh;
@@ -125,8 +131,30 @@ header h1 {
 
 .projects {
   height: inherit;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  .projects {
+    scrollbar-width: auto;
+    scrollbar-color: #a3a3a3 #ffffff;
+    scroll-padding: 10px;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .projects::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .projects::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  .projects::-webkit-scrollbar-thumb {
+    background-color: #a3a3a3;
+    border-radius: 10px;
+    border: 3px solid #a3a3a3;
+  }
 
 .project-item {
 
@@ -258,6 +286,7 @@ footer {
   min-height: 50px;
   max-height: 200px;
 
+
 }
 
 #contact-details {
@@ -269,7 +298,7 @@ footer {
 }
 
 #contact-details h2 {
-  font-size: 4vw;
+  font-size: 25px;
 }
 
 #mobile-resume-btn {

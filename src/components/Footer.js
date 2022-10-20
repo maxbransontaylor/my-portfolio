@@ -55,8 +55,9 @@ function Footer() {
       </a>
       <div
         id="contact-details"
-        className={`d-flex justify-content-center ${contactDetails ? "yopacity" : "nopacity"
-          }`}
+        className={`d-flex justify-content-center ${
+          contactDetails ? "yopacity" : "nopacity"
+        }`}
       >
         <h2>{contactDetails}</h2>
       </div>
