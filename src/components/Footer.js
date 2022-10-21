@@ -3,6 +3,7 @@ import githubLogo from "../github.svg";
 import linkedInLogo from "../linkedin.svg";
 import phoneLogo from "../phone.svg";
 import emailLogo from "../email.svg";
+import stackoverflowgo from '../stackoverflow.svg'
 function Footer() {
   const [contactDetails, setContactDetails] = useState("");
   function hoverHandler(e) {
@@ -41,6 +42,15 @@ function Footer() {
         className="col-2"
         onMouseOver={hoverHandler}
         aria-details="contact-details"
+        href="https://stackoverflow.com/users/19243922/max-taylor"
+        target="_blank"
+      >
+        <img src={stackoverflowgo} className="footer-icon" />
+      </a>
+      <a
+        className="col-2"
+        onMouseOver={hoverHandler}
+        aria-details="contact-details"
         href="mailto:maxbransontaylor@gmail.com"
       >
         <img src={emailLogo} className="footer-icon" />
@@ -55,9 +65,8 @@ function Footer() {
       </a>
       <div
         id="contact-details"
-        className={`d-flex justify-content-center ${
-          contactDetails ? "yopacity" : "nopacity"
-        }`}
+        className={`d-flex justify-content-center ${contactDetails ? "yopacity" : "nopacity"
+          }`}
       >
         <h2>{contactDetails}</h2>
       </div>

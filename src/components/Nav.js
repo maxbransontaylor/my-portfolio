@@ -6,7 +6,7 @@ function Nav({ currentPage, pageSelect }) {
   });
   return (
     <header>
-      <h1>Max Taylor</h1>
+      <h1 >Max Taylor</h1>
       <nav>
         <ul className="nav nav-tabs">
           <li className="nav-item">

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap');
+
 
 
 :root {
@@ -54,9 +55,15 @@ main {
   padding: 2vw;
 }
 
+P {
+  font-family: 'Figtree', cursive;
+}
 
 header h1 {
   font-family: 'Figtree', cursive;
+  font-weight: 600;
+  margin: 1vw;
+  padding-top: 1vw;
 }
 
 .nav-link {
@@ -96,12 +103,15 @@ header h1 {
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.about-page{
+
+.about-page {
   height: inherit;
 }
-#about-container{
-  height:min-content;
+
+#about-container {
+  height: min-content;
 }
+
 .prof-img {
   border-radius: 50%;
   height: 35vh;
@@ -133,28 +143,29 @@ header h1 {
   height: inherit;
   overflow-y: auto;
 }
+
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  .projects {
-    scrollbar-width: auto;
-    scrollbar-color: #a3a3a3 #ffffff;
-    scroll-padding: 10px;
-  }
+/* Firefox */
+.projects {
+  scrollbar-width: auto;
+  scrollbar-color: #a3a3a3 #ffffff;
+  scroll-padding: 10px;
+}
 
-  /* Chrome, Edge, and Safari */
-  .projects::-webkit-scrollbar {
-    width: 10px;
-  }
+/* Chrome, Edge, and Safari */
+.projects::-webkit-scrollbar {
+  width: 10px;
+}
 
-  .projects::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0);
-  }
+.projects::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}
 
-  .projects::-webkit-scrollbar-thumb {
-    background-color: #a3a3a3;
-    border-radius: 10px;
-    border: 3px solid #a3a3a3;
-  }
+.projects::-webkit-scrollbar-thumb {
+  background-color: #a3a3a3;
+  border-radius: 10px;
+  border: 3px solid #a3a3a3;
+}
 
 .project-item {
 
@@ -278,7 +289,7 @@ textarea {
 }
 
 footer {
-  height: 25vh;
+  height: 22vh;
 }
 
 .footer-icon {
