@@ -54,7 +54,10 @@ main {
   transition: opacity ease-in .7s;
   padding: 2vw;
 }
-
+.contact {
+  height: inherit;
+  overflow-y: auto;
+}
 P {
   font-family: 'Figtree', cursive;
 }
@@ -102,6 +105,18 @@ header h1 {
 
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
+}
+.genrebuddy{
+  background-image: url(./static/images/genrebuddy.png);
+}
+.giftpilot{
+  background-image: url(./static/images/giftpilot.png);
+}
+.portfolio{
+  background-image: url(./static/images/portfolio.png);
+}
+.weatherdash{
+  background-image: url(./static/images/weatherdash.png);
 }
 
 .about-page {

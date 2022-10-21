@@ -4,6 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Work from "./components/Work";
 import Footer from "./components/Footer";
+
 function App() {
   const [currentPage, pageSelect] = useState("About Me");
   const renderPage = () => {

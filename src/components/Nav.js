@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-
+import resume from "../taylor-resume.pdf";
 function Nav({ currentPage, pageSelect }) {
   useEffect(() => {
     document.title = currentPage;
   });
   return (
     <header>
-      <h1 >Max Taylor</h1>
+      <h1>Max Taylor</h1>
       <nav>
         <ul className="nav nav-tabs">
           <li className="nav-item">
@@ -41,7 +41,7 @@ function Nav({ currentPage, pageSelect }) {
             <a
               className="nav-link"
               id="resume-btn"
-              href="/taylor-resume.pdf"
+              href={resume}
               target="_blank"
             >
               Download Resume

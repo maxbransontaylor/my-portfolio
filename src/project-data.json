@@ -2,28 +2,28 @@
     "projects": [
         {
             "projectTitle": "Genre Buddy",
-            "imageUrl": "genrebuddy.png",
+            "imageUrl": "genrebuddy",
             "repoLink": "https://github.com/maxbransontaylor/genre-buddy",
             "liveLink": "https://maxbransontaylor.github.io/genre-buddy/",
             "tech": "HTML, CSS, JS"
         },
         {
             "projectTitle": "Gift Pilot",
-            "imageUrl": "giftpilot.png",
+            "imageUrl": "giftpilot",
             "repoLink": "https://github.com/maxbransontaylor/gift-pilot",
             "liveLink": "https://gift-pilot.herokuapp.com",
             "tech": "Express, Handlebars, MySQL"
         },
         {
             "projectTitle": "This Portfolio!",
-            "imageUrl": "portfolio.png",
+            "imageUrl": "portfolio",
             "repoLink": "https://github.com/maxbransontaylor/my-portfolio",
             "liveLink": "/",
             "tech": "React, Bootstrap"
         },
         {
             "projectTitle": "Weather Dashboard",
-            "imageUrl": "weatherdash.png",
+            "imageUrl": "weatherdash",
             "repoLink": "https://github.com/maxbransontaylor/weather-dashboard",
             "liveLink": "https://maxbransontaylor.github.io/weather-dashboard/",
             "tech": "Bootstrap, HTML, JS"
