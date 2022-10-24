@@ -19,7 +19,7 @@ function About() {
         <img className="prof-img" src={photo}></img>
         <p id="about-text">
           I am a full stack web developer that finds fulfillment in creating
-          exciting, interactive front-ends as well as effecient, intuitive
+          exciting, interactive front-ends as well as efficient, intuitive
           backends. What I love even more is the creative problem-solving and
           bug-fixing along the way. User experience and accessibility are
           essential. I try to consider a wide range of users and develop

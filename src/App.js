@@ -4,6 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Work from "./components/Work";
 import Footer from "./components/Footer";
+import resume from "./taylor-resume.pdf";
 
 function App() {
   const [currentPage, pageSelect] = useState("About Me");
@@ -29,7 +30,7 @@ function App() {
       <div className="container">
         <Footer />
       </div>
-      <a href="/taylor-resume.pdf" target="_blank" id="mobile-resume-btn">
+      <a href={resume} target="_blank" id="mobile-resume-btn">
         Download Resume
       </a>
     </>
