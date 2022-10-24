@@ -130,6 +130,7 @@ header h1 {
 .prof-img {
   border-radius: 50%;
   height: 35vh;
+  min-height: 150px;
   float: left;
   shape-outside: circle();
   padding: 20px;
@@ -360,7 +361,7 @@ footer {
   #about-text {
     display: block;
     text-align: center;
-    font-size: 2vh;
+    font-size: 14px;
   }
 
 }
@@ -369,7 +370,7 @@ footer {
   #resume-btn {
     display: none;
   }
-
+ 
   #mobile-resume-btn {
     display: flex;
     justify-content: center;
@@ -377,5 +378,24 @@ footer {
     color: white;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
+  }
+}
+@media screen and (max-height: 611px) {
+  .project-header{
+    font-size: 16px;
+
+  }
+  .project-footer {
+    font-size: 12px;
+  }
+ main {
+  height: 50vh;
+ }
+ .footer-icon{
+  padding-top: 5px;
+ }
+  footer {
+
+    height: 10vh;
   }
 }
