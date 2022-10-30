@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;900&family=Indie+Flower&family=Orbitron&display=swap');
 
 
 :root {
@@ -54,10 +53,12 @@ main {
   transition: opacity ease-in .7s;
   padding: 2vw;
 }
+
 .contact {
   height: inherit;
   overflow-y: auto;
 }
+
 P {
   font-family: 'Figtree', cursive;
 }
@@ -106,16 +107,20 @@ header h1 {
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-.genrebuddy{
+
+.genrebuddy {
   background-image: url(./static/images/genrebuddy.png);
 }
-.giftpilot{
+
+.giftpilot {
   background-image: url(./static/images/giftpilot.png);
 }
-.portfolio{
+
+.portfolio {
   background-image: url(./static/images/portfolio.png);
 }
-.weatherdash{
+
+.weatherdash {
   background-image: url(./static/images/weatherdash.png);
 }
 
@@ -370,7 +375,7 @@ footer {
   #resume-btn {
     display: none;
   }
- 
+
   #mobile-resume-btn {
     display: flex;
     justify-content: center;
@@ -380,20 +385,25 @@ footer {
     border-top-right-radius: 2vw;
   }
 }
+
 @media screen and (max-height: 611px) {
-  .project-header{
+  .project-header {
     font-size: 16px;
 
   }
+
   .project-footer {
     font-size: 12px;
   }
- main {
-  height: 50vh;
- }
- .footer-icon{
-  padding-top: 5px;
- }
+
+  main {
+    height: 50vh;
+  }
+
+  .footer-icon {
+    padding-top: 5px;
+  }
+
   footer {
 
     height: 10vh;

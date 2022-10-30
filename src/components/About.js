@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import photo from "../mediumcasual.jpg";
 
 function About() {
+
   const [pageLoad, setPageLoad] = useState(false);
   useEffect(() => {
     setPageLoad(true);
@@ -11,9 +12,8 @@ function About() {
   }, []);
   return (
     <section
-      className={`about-page d-flex align-items-center ${
-        pageLoad ? "yopacity" : "nopacity"
-      }`}
+      className={`about-page d-flex align-items-center ${pageLoad ? "yopacity" : "nopacity"
+        }`}
     >
       <div id="about-container">
         <img className="prof-img" src={photo}></img>
