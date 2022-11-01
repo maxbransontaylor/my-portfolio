@@ -100,6 +100,7 @@ h2{
 
     @media screen and (max-width: 400px) {
         .pictures {
-            width: 25%
+            width: 25%;
+            padding-top: 25%
         }
     }
