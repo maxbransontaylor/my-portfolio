@@ -22,7 +22,10 @@ function Contact() {
   });
   useEffect(() => {
     const { nameError, emailError, messageError } = errorMessage;
+    const { name, email, message } = formState;
     if (nameError || emailError || messageError) {
+      setIsError(true);
+    } else if (!email || !name || !message) {
       setIsError(true);
     } else {
       setIsError(false);
