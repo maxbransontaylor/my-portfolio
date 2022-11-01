@@ -336,9 +336,13 @@ color: var(--primary-color) !important;
 textarea {
   resize: none;
 }
-
+.footercontainer{
+  margin-top: 3vh;
+}
 footer {
   height: 10vh;
+
+  
 }
 
 .footer-icon {
@@ -363,10 +367,10 @@ footer {
 
 #mobile-resume-btn {
   display: none;
-  position: fixed;
-  bottom: 0;
+  margin-top: 2vh;
+  font-family: var(--font);
   background-color: var(--primary-color);
-  width: 100vw;
+  width: 50vw;
   text-align: center;
   height: 50px;
   font-size: large;
@@ -416,6 +420,9 @@ footer {
   }
   #about-text{
     font-size: 18px;
+  }
+  main {
+    height: 55vh;
   }
 }
 

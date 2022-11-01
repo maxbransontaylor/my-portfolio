@@ -4,6 +4,7 @@ import linkedInLogo from "../linkedin.svg";
 import phoneLogo from "../phone.svg";
 import emailLogo from "../email.svg";
 import stackoverflowgo from "../stackoverflow.svg";
+import resume from "../taylor-resume.pdf";
 function Footer() {
   const [contactDetails, setContactDetails] = useState("");
   function hoverHandler(e) {
@@ -62,6 +63,9 @@ function Footer() {
         href="tel:9195309428"
       >
         <img src={phoneLogo} className="footer-icon" />
+      </a>
+      <a href={resume} target="_blank" id="mobile-resume-btn" className="btn">
+        Download Resume
       </a>
     </footer>
   );

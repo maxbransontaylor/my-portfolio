@@ -63,12 +63,9 @@ function App() {
         </main>
       </div>
 
-      <div className="container">
+      <div className="container footercontainer">
         <Footer />
       </div>
-      <a href={resume} target="_blank" id="mobile-resume-btn">
-        Download Resume
-      </a>
     </>
   );
 }

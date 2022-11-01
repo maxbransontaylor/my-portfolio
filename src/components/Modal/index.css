@@ -97,3 +97,9 @@ h2{
     max-height: 50%;
     /* border: 2px solid black; */
     }
+
+    @media screen and (max-width: 400px) {
+        .pictures {
+            width: 25%
+        }
+    }
