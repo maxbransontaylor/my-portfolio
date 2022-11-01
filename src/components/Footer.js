@@ -3,7 +3,7 @@ import githubLogo from "../github.svg";
 import linkedInLogo from "../linkedin.svg";
 import phoneLogo from "../phone.svg";
 import emailLogo from "../email.svg";
-import stackoverflowgo from '../stackoverflow.svg'
+import stackoverflowgo from "../stackoverflow.svg";
 function Footer() {
   const [contactDetails, setContactDetails] = useState("");
   function hoverHandler(e) {
@@ -63,13 +63,6 @@ function Footer() {
       >
         <img src={phoneLogo} className="footer-icon" />
       </a>
-      <div
-        id="contact-details"
-        className={`d-flex justify-content-center ${contactDetails ? "yopacity" : "nopacity"
-          }`}
-      >
-        <h2>{contactDetails}</h2>
-      </div>
     </footer>
   );
 }

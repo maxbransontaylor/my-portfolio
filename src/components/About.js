@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import photo from "../mediumcasual.jpg";
-
-function About() {
-
+import medium from "../mediumcasual.jpg";
+import business from "../business.png";
+import casual from "../casual.jpg";
+function About({ preferences }) {
   const [pageLoad, setPageLoad] = useState(false);
   useEffect(() => {
     setPageLoad(true);
@@ -10,13 +10,23 @@ function About() {
       setPageLoad(false);
     };
   }, []);
+
   return (
     <section
-      className={`about-page d-flex align-items-center ${pageLoad ? "yopacity" : "nopacity"
-        }`}
+      className={`about-page d-flex align-items-center ${
+        pageLoad ? "yopacity" : "nopacity"
+      }`}
     >
       <div id="about-container">
-        <img className="prof-img" src={photo}></img>
+        {preferences.picture === "medium" && (
+          <img className="prof-img" src={medium}></img>
+        )}
+        {preferences.picture === "business" && (
+          <img className="prof-img" src={business}></img>
+        )}
+        {preferences.picture === "casual" && (
+          <img className="prof-img" src={casual}></img>
+        )}
         <p id="about-text">
           I am a full stack web developer that finds fulfillment in creating
           exciting, interactive front-ends as well as efficient, intuitive

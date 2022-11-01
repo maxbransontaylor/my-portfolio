@@ -5,28 +5,32 @@
             "imageUrl": "genrebuddy",
             "repoLink": "https://github.com/maxbransontaylor/genre-buddy",
             "liveLink": "https://maxbransontaylor.github.io/genre-buddy/",
-            "tech": "HTML, CSS, JS"
+            "tech": "HTML, CSS, JS",
+            "description":"A front-end web application that gives a user newly released games, movies, and books in their preferred genre."
         },
         {
             "projectTitle": "Gift Pilot",
             "imageUrl": "giftpilot",
             "repoLink": "https://github.com/maxbransontaylor/gift-pilot",
             "liveLink": "https://gift-pilot.herokuapp.com",
-            "tech": "Express, Handlebars, MySQL"
+            "tech": "Express, Handlebars, MySQL",
+            "description":"A full-stack app that allows users to create gift wish lists, and check off items from their friends' wish lists anonymously."
         },
         {
             "projectTitle": "This Portfolio!",
             "imageUrl": "portfolio",
             "repoLink": "https://github.com/maxbransontaylor/my-portfolio",
             "liveLink": "/",
-            "tech": "React, Bootstrap"
+            "tech": "React, Bootstrap",
+            "description":"You're lookin' at it! "
         },
         {
             "projectTitle": "Weather Dashboard",
             "imageUrl": "weatherdash",
             "repoLink": "https://github.com/maxbransontaylor/weather-dashboard",
             "liveLink": "https://maxbransontaylor.github.io/weather-dashboard/",
-            "tech": "Bootstrap, HTML, JS"
+            "tech": "Bootstrap, HTML, JS",
+            "description":"Front-end app using the OpenWeather API to display and store weather data."
         }
     ]
 }
