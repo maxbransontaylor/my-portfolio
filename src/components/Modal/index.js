@@ -28,8 +28,7 @@ function Modal({ setShowModal, preferences, setPreferences }) {
       className={`modalBackdrop ${pageLoad ? "yopacity" : "nopacity"}`}
       onClick={backdropClose}
     >
-      <div className="modalContainer">
-        <h3 className="modalTitle">Preferences</h3>
+      <div className="modalContainer d-flex align-items-center">
         <button
           className="close"
           onClick={() => {
@@ -61,7 +60,7 @@ function Modal({ setShowModal, preferences, setPreferences }) {
             />
           )}
         </section>
-        {page > 0 && <p id="pagecounter">{page}/3</p>}
+        <p id="pagecounter">{page}/3</p>
         <div id="buttoncontainer">
           {page > 0 && (
             <>

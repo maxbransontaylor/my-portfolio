@@ -34,7 +34,7 @@ a {
 }
 
 main {
-  height: 70vh;
+  height: 65vh;
   position: relative;
 
 }
@@ -409,7 +409,9 @@ footer {
   #resume-btn {
     display: none;
   }
-
+body{
+  padding-top: 1vh;
+}
   #mobile-resume-btn {
     display: flex;
     justify-content: center;

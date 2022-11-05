@@ -8,7 +8,7 @@ function Font({ preferences, setPreferences }) {
 
   return (
     <>
-      <h2>Which font looks the most professional?</h2>
+      <h2>Which font do you prefer?</h2>
       <form onChange={handleChange}>
         <div className="form-check" id="indie">
           <input
