@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.b39c0c66.css",
-    "main.js": "/my-portfolio/static/js/main.af32fd2f.js",
+    "main.css": "/my-portfolio/static/css/main.4213299b.css",
+    "main.js": "/my-portfolio/static/js/main.6b33a388.js",
     "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/genrebuddy.png": "/my-portfolio/static/media/genrebuddy.9af7fdb6041de1cce42d.png",
     "static/media/business.png": "/my-portfolio/static/media/business.63d741a06e81782097a4.png",
     "static/media/casual.jpg": "/my-portfolio/static/media/casual.718b52daa26aeeb5f734.jpg",
     "static/media/mediumcasual.jpg": "/my-portfolio/static/media/mediumcasual.6f688c0656bde5c064e3.jpg",
+    "static/media/invent.png": "/my-portfolio/static/media/invent.304882b32904f83d9572.png",
     "static/media/portfolio.png": "/my-portfolio/static/media/portfolio.c9b337cd8aeaf1fa4e23.png",
     "static/media/giftpilot.png": "/my-portfolio/static/media/giftpilot.64b3c0884f860d52a321.png",
     "static/media/weatherdash.png": "/my-portfolio/static/media/weatherdash.54facf53b65fc3371fbd.png",
-    "static/media/taylor-resume.pdf": "/my-portfolio/static/media/taylor-resume.e1107918d76ec4ff9af5.pdf",
+    "static/media/taylor-resume.pdf": "/my-portfolio/static/media/taylor-resume.5655d37d70817d135ca5.pdf",
     "static/media/github.svg": "/my-portfolio/static/media/github.04be58c17b3d5e9744424d414240dd85.svg",
     "index.html": "/my-portfolio/index.html",
     "static/media/stackoverflow.svg": "/my-portfolio/static/media/stackoverflow.623087f8cf666c88c751db7ee2b6939d.svg",
     "static/media/linkedin.svg": "/my-portfolio/static/media/linkedin.27a3f479ca1bbb0ceef19e395081fb94.svg",
     "static/media/phone.svg": "/my-portfolio/static/media/phone.fa73907d058b625e82738934fd9e419a.svg",
     "static/media/email.svg": "/my-portfolio/static/media/email.6ac62bfa03e2a985535678e82ffed575.svg",
-    "main.b39c0c66.css.map": "/my-portfolio/static/css/main.b39c0c66.css.map",
-    "main.af32fd2f.js.map": "/my-portfolio/static/js/main.af32fd2f.js.map",
+    "main.4213299b.css.map": "/my-portfolio/static/css/main.4213299b.css.map",
+    "main.6b33a388.js.map": "/my-portfolio/static/js/main.6b33a388.js.map",
     "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b39c0c66.css",
-    "static/js/main.af32fd2f.js"
+    "static/css/main.4213299b.css",
+    "static/js/main.6b33a388.js"
   ]
 }
