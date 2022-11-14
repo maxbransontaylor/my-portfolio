@@ -9,6 +9,14 @@
             "description":"A front-end web application that gives a user newly released games, movies, and books in their preferred genre."
         },
         {
+            "projectTitle": "Invent",
+            "imageUrl": "invent",
+            "repoLink": "https://github.com/maxbransontaylor/invent",
+            "liveLink": "https://uncbcinvent.herokuapp.com",
+            "tech": "MERN, GraphQl, Pusher, React-Bootstrap",
+            "description":"Event planning/scheduling app that caters to organizations that need to keep many different departments updated."
+        },
+        {
             "projectTitle": "Gift Pilot",
             "imageUrl": "giftpilot",
             "repoLink": "https://github.com/maxbransontaylor/gift-pilot",
@@ -20,9 +28,9 @@
             "projectTitle": "This Portfolio!",
             "imageUrl": "portfolio",
             "repoLink": "https://github.com/maxbransontaylor/my-portfolio",
-            "liveLink": "/",
+            "liveLink": "http://maxbransontaylor.github.io/my-portfolio/",
             "tech": "React, Bootstrap",
-            "description":"You're lookin' at it! "
+            "description":"React app serving as my portfolio, uses the MailJet API to send contact messages! "
         },
         {
             "projectTitle": "Weather Dashboard",
@@ -32,5 +40,6 @@
             "tech": "Bootstrap, HTML, JS",
             "description":"Front-end app using the OpenWeather API to display and store weather data."
         }
+        
     ]
 }

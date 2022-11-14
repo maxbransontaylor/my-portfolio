@@ -115,7 +115,7 @@ color: var(--primary-color) !important;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-
+/* project background images added here because react rendering was being weird */
 .genrebuddy {
   background-image: url(./static/images/genrebuddy.png);
 }
@@ -130,6 +130,9 @@ color: var(--primary-color) !important;
 
 .weatherdash {
   background-image: url(./static/images/weatherdash.png);
+}
+.invent{
+  background-image: url(./static/images/invent.png);
 }
 
 
@@ -409,6 +412,9 @@ footer {
   #resume-btn {
     display: none;
   }
+  .project-description {
+    font-size: 12px !important;
+  }
 body{
   padding-top: 1vh;
 }
@@ -433,6 +439,7 @@ body{
     font-size: 16px;
 
   }
+ 
 
   .project-footer {
     font-size: 12px;
