@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;900&family=Indie+Flower&family=Orbitron&display=swap');
 
-
+/* main page and container */
 :root {
   --primary-color: rgb(60, 151, 255);
   --font: 'Figtree'
@@ -75,6 +75,7 @@ header{position: relative;}
 transition: all ease-in-out .3s;
 }
 #modalbutton:hover{color: var(--primary-color);}
+/* nav tabs */
 .nav-link {
   font-family: 'Figtree', cursive;
   border: none !important;
@@ -85,14 +86,16 @@ transition: all ease-in-out .3s;
   color: var(--primary-color);
 }
 .nav-tabs .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, .6);
+  
 }
 
 .nav-link.active {
 
 color: var(--primary-color) !important;
   box-shadow: 2px -3px 5px 1px #D8D4D7 !important;
-  clip-path: inset(-10px -10px 0px -5px);
+  clip-path: inset(-10px -10px 0px -10px);
+  padding-bottom: 7px !important;
 }
 
 .nav.nav-tabs {
@@ -115,7 +118,7 @@ color: var(--primary-color) !important;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-/* project background images added here because react rendering was being weird */
+/* project background images added here because react inline rendering would not work as intended */
 .genrebuddy {
   background-image: url(./static/images/genrebuddy.png);
 }
@@ -135,7 +138,7 @@ color: var(--primary-color) !important;
   background-image: url(./static/images/invent.png);
 }
 
-
+/* about page  */
 .about-page {
   box-sizing: padding-box;
   -moz-box-sizing: padding-box;
@@ -144,9 +147,6 @@ color: var(--primary-color) !important;
   overflow-y: auto;
 }
 
-/* #about-container {
-  height: min-content;
-} */
 
 .prof-img {
   border-radius: 50%;
@@ -208,7 +208,7 @@ color: var(--primary-color) !important;
   border-radius: 9999px;
   background-color: rgba(0, 0, 0, .5);
 }
-
+/* works page css */
 .project-item {
 
   animation-name: animateIn;
@@ -217,7 +217,7 @@ color: var(--primary-color) !important;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 }
-
+/* manually staggering animations for project items */
 .project-item:nth-child(1) {
   animation-delay: 100ms;
 }
@@ -262,7 +262,7 @@ color: var(--primary-color) !important;
     opacity: 1;
   }
 }
-
+/* project items */
 .project-item {
   background-size: cover;
   height: 20vh;
@@ -339,6 +339,7 @@ color: var(--primary-color) !important;
 textarea {
   resize: none;
 }
+/* footer styles */
 .footercontainer{
   margin-top: 3vh;
 }
@@ -355,7 +356,7 @@ footer {
 
 
 }
-
+/* contact-details section is currently removed but may be re-added */
 #contact-details {
   height: 1vh;
   transition-delay: 2s;
@@ -387,6 +388,8 @@ footer {
 .yopacity {
   opacity: 1;
 }
+
+/* lots of minor tweaking to make the site look good on all devices */
 
 @media screen and (max-width: 760px) {
 
